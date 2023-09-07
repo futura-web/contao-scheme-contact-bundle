@@ -1,0 +1,52 @@
+{
+    "name": "futura-web/contao-scheme-contact-bundle",
+    "description": "schema.org compliant extension for Contao Open Source CMS",
+    "license": "LGPL-3.0-or-later",
+    "type": "contao-bundle",
+    "authors": [
+        {
+            "name": "Dinko Skopljak",
+            "homepage": "https://github.com/futura-web"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "contao/core-bundle": "^4.13",
+        "symfony/config": "^5.4",
+        "symfony/dependency-injection": "^5.4",
+        "symfony/http-kernel": "^5.4"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.12",
+        "phpunit/phpunit": "^5.7.26",
+        "symfony/phpunit-bridge": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Futuraweb\\ContaoSchemeContactBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Futuraweb\\ContaoSchemeContactBundle\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true,
+            "contao-components/installer": true,
+            "contao/manager-plugin": true
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Futuraweb\\ContaoSchemeContactBundle\\ContaoManager\\Plugin"
+    },
+    "support": {
+        "issues": "https://github.com/futura-web/contao-scheme-contact-bundle/issues",
+        "source": "https://github.com/futura-web/contao-scheme-contact-bundle"
+    }
+}
